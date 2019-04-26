@@ -1,20 +1,14 @@
-server:
-  port: 7101
-
 spring:
+   profiles:
+      active:
+      - dev
+---
+spring:
+  profiles: dev
   application:
-    name: microcloud-config
-  cloud:
-      config:
-        server:
-          git:
-            uri: https://github.com/getWoods/springcloudGit.git
-
-
-eureka:
- client:
-  service-url:
-    defaultZone: http://admin:enjoy@172.17.0.4:7001
- instance:
-  prefer-ip-address: true # 在地址栏上使用IP地址进行显示
-  instance-id: microcloud-config1
+      name: springcloud-test-dev
+---
+spring:
+ profiles: default
+ application:
+      name: springcloud-test-default
