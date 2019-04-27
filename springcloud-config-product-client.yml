@@ -26,7 +26,7 @@ logging:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:enjoy@localhost:7002,http://admin:enjoy@172.17.0.4:7001
+      defaultZone: http://admin:enjoy@localhost:7002/eureka,http://admin:enjoy@172.17.0.4:7001/eureka
   instance:
     instance-id: springcloud-config-product-client
     prefer-ip-address: true
@@ -70,7 +70,7 @@ logging:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:enjoy@localhost:7002,http://admin:enjoy@172.17.0.4:7001
+      defaultZone: http://admin:enjoy@localhost:7002/eureka,http://admin:enjoy@172.17.0.4:7001/eureka
   instance:
     instance-id: springcloud-config-product-client
     prefer-ip-address: true
